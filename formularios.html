@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--Para obtener el valor que se ingreso por parte del usuario en un input se utiliza el atributo 'value'-->
+    <h1>Formularios</h1>
+    <form method="post"> <!-- El atributo 'method' determina por donde pasar la informacion obtenida en el formulario, el valor 'post' se utiliza para enviarlo al servidor -->
+        <input type="text" ><br> <!-- Esta etiqueta posee un atributo 'name' el cual es utilizado para obtener el valor del input desde back-end -->
+        <input type="password" required=""><br> <!-- El atributo 'required' vuelve un campo obligatorio al input (esto se hace del lado del servidor)-->
+        <input type="number"><br>
+        <input type="email"><br><!-- Solo aceptara texto que contenga un '@' seguido de otro texto -->
+        <input type="color"><br>
+        <input type="range" min="10" max="1000"><br>
+        <input type="date"><br>
+        <input type="time"><br>
+        <input type="button" value="Boton"><br><!-- El atributo 'value' siempre sera el que determine el valor que se mostrara en el tipo de input 'button' -->
+        <input type="submit"><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea> <!-- Es un bloque de texto que se puede modificar el tamanio pero no su contenido-->
+    </form>
+</body>
+</html>
